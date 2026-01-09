@@ -171,7 +171,8 @@ body {
     text-align: center;
     padding: 2rem;
 
-    background-image: url("imagenes/Obsidiana/fondo.svg");
+    /* Optimization: Replaced a large inline SVG with a direct PNG link to improve load performance. */
+    background-image: url("imagenes/Obsidiana/fondo_extracted.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
