@@ -1,0 +1,3 @@
+## 2024-07-12 - Embedded Base64 Images in SVG
+**Learning:** Embedding large, base64-encoded raster images (like PNGs or JPGs) directly into an SVG file is a performance anti-pattern. It significantly inflates the SVG's file size, turning a typically small vector file into a large, render-blocking asset. This negates the benefits of using SVGs and increases page load times.
+**Action:** When a raster image is needed, reference it directly using an `<img>` tag or a CSS `background-image` property. Extract embedded images from SVGs and replace the SVG with a direct reference to the optimized raster image. Delete the oversized SVG.
