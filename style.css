@@ -171,7 +171,13 @@ body {
     text-align: center;
     padding: 2rem;
 
-    background-image: url("imagenes/Obsidiana/fondo.svg");
+    /* ⚡ Bolt: Performance Optimization
+     * What: Extracted a large, base64-encoded PNG from an SVG and referenced it directly.
+     * Why:  Loading the image directly is more performant than parsing a large SVG data URI.
+     *       This allows the browser to discover and load the image asset earlier,
+     *       improving both perceived and actual load times.
+     */
+    background-image: url("imagenes/Obsidiana/fondo_extracted.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
