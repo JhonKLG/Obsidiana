@@ -171,7 +171,14 @@ body {
     text-align: center;
     padding: 2rem;
 
-    background-image: url("imagenes/Obsidiana/fondo.svg");
+    /* ⚡ Bolt: Performance Optimization
+     * What: Replaced a large, base64-encoded SVG background with a direct PNG reference.
+     * Why:  Embedding a raster image as base64 inside an SVG forces the browser to decode the
+     *       large text string on every load before rendering, which is significantly slower
+     *       than loading a standard, optimized PNG directly. This change improves initial
+     *       paint time and reduces CPU usage during page load.
+    */
+    background-image: url("imagenes/Obsidiana/fondo_extracted.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
