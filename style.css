@@ -171,7 +171,13 @@ body {
     text-align: center;
     padding: 2rem;
 
-    background-image: url("imagenes/Obsidiana/fondo.svg");
+    /* ⚡ Bolt: Performance Optimization
+     * Replaced an inefficient SVG containing a large, base64-encoded raster image
+     * with a direct reference to an optimized PNG. This allows the browser to
+     * download the image in parallel and cache it effectively, improving
+     * page load performance by avoiding blocking the main thread for decoding.
+     */
+    background-image: url("imagenes/Obsidiana/fondo_extracted.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
