@@ -171,7 +171,8 @@ body {
     text-align: center;
     padding: 2rem;
 
-    background-image: url("imagenes/Obsidiana/fondo.svg");
+    /* ⚡ Bolt: Extracted raster image from SVG to reduce file size and avoid base64 decoding overhead. */
+    background-image: url("imagenes/Obsidiana/fondo.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
