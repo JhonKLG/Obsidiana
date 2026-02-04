@@ -171,7 +171,8 @@ body {
     text-align: center;
     padding: 2rem;
 
-    background-image: url("imagenes/Obsidiana/fondo.svg");
+    /* ⚡ Bolt: Use optimized PNG instead of base64-embedded SVG for background */
+    background-image: url("imagenes/Obsidiana/fondo.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
