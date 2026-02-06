@@ -171,7 +171,8 @@ body {
     text-align: center;
     padding: 2rem;
 
-    background-image: url("imagenes/Obsidiana/fondo.svg");
+    /* ⚡ Bolt: Replaced 928KB SVG with 695KB PNG (extracted from SVG) to reduce page load time */
+    background-image: url("imagenes/Obsidiana/fondo.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
